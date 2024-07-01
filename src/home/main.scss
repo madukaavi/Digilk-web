@@ -1,4 +1,37 @@
 //import_the_font-section
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 //import_the_color_root
-@import url(colors.scss);
+@import '../colors/colors.scss';
+
+//heder-section///
+.heder-text{
+    color:$secondary-color !important;
+    font-size: 14px !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    animation: fadeUp 3s ease-in-out forwards;
+
+}
+//animation-part//
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//responsive-part
+@media(max-width:320px){
+    .heder-text{
+        font-size: 8px !important;
+        font-weight:500;
+
+    }
+}
+//heder-section///
+
